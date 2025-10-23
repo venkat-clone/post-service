@@ -1,4 +1,4 @@
-const postDao = require('./postDao');
+import  postDao from '@venkat-clone/post-dao';
 
 class PostService {
     // Create a new post with some basic validation
@@ -44,4 +44,5 @@ class PostService {
     }
 }
 
-module.exports = new PostService();
+const postService = new PostService()
+export default postService;
